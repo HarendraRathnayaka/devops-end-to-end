@@ -18,6 +18,6 @@ spec:
     spec:
       containers:
         - name: devops-end2end
-          image: harendra9910/devops-end2end
+          image: harendra9910/devops-end2end:v1
           ports:
             - containerPort: 8080
