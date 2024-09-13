@@ -8,7 +8,7 @@ image:
   repository: harendra9910/devops-end2end
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v1"
+  tag: "10847857772"
 
 ingress:
   enabled: false
