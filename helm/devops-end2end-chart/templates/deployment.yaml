@@ -1,0 +1,23 @@
+# This is a sample deployment manifest file for a simple web application.
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devops-end2end
+  labels:
+    app: devops-end2end
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: devops-end2end
+  template:
+    metadata:
+      labels:
+        app: devops-end2end
+    spec:
+      containers:
+        - name: devops-end2end
+          image: harendra9910/devops-end2end:{{ .Values.image.tag }}
+          ports:
+            - containerPort: 8080
